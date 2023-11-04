@@ -94,3 +94,25 @@ p {
 #main-heading {
   color: black;
 }
+#decrypted-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+#decrypted-grid > img{
+  height: 200px;
+  width: 200px;
+}
+#close-btn{
+  margin: 20px 0;
+  font-family: "Playpen Sans", cursive;
+  padding: 12px 20px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#close-btn:hover{
+  background-color: #ff9800;
+}

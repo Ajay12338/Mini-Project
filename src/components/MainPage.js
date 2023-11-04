@@ -6,7 +6,7 @@ const MainPage = () => {
     <>
       <h1 id="main-heading">{`Welcome ${location?.state?.username}`}</h1>
       <div className="login-container">
-        <MainBody uid={location?.state?.uid} />
+        <MainBody uid={location?.state?.userId} />
       </div>
     </>
   );
