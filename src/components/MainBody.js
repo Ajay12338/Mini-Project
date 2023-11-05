@@ -22,8 +22,8 @@ const MainBody = (props) => {
       const encrypted = CryptoJS.AES.encrypt(originalImage, password);
       console.log("Encrypted Data: \n", encrypted.toString());
       try {
-        const docRef = await addDoc(collection(db, props.uid), {
-          date_added: new Date(),
+        await addDoc(collection(db, props.uid), {
+          date_added: new Date().toDateString(),
           desc: `Secret Image`,
           enc_data: encrypted.toString(),
         });
@@ -48,7 +48,7 @@ const MainBody = (props) => {
       navigate("/decrypted_image",{state:{images:encrypted_images, dates:dates_of_images,key:password}})
     }
     catch(err){
-      alert(`Error ${err}`);
+      alert(`Error -> ${err}`);
     }
   };
   useEffect(() => {

@@ -47,7 +47,7 @@ const Body = () => {
                     state: {
                       username: userCredential.user.displayName,
                       userId: userCredential.user.uid,
-                    },
+                    },   
                   });
                 })
                 .catch((error) => {
