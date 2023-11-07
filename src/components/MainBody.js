@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import CryptoJS from "crypto-js";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../utils/firebase_init";
+import secret_key from "../utils/secret_key";
 const MainBody = (props) => {
   const [originalImage, setOriginalImage] = useState(null);
   const handleImageChange = (e) => {
@@ -16,7 +17,7 @@ const MainBody = (props) => {
   };
   const handleEncrypt = async () => {
     if (originalImage) {
-      const password = "yoursecretpassword1";
+      const password = secret_key();
       const encrypted = CryptoJS.AES.encrypt(originalImage, password);
       console.log("Encrypted Data: \n", encrypted.toString());
       try {
