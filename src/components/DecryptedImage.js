@@ -63,7 +63,6 @@ const DecryptedImage = () => {
         })}
       </div>
       <button
-        key={"shds4vskddj"}
         id="close-btn"
         onClick={() => {
           navigate("/");
