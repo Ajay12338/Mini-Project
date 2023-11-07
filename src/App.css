@@ -94,26 +94,26 @@ p {
 #main-heading {
   color: black;
 }
-#decrypted-grid{
+#decrypted-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap:5px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
   margin: 10px;
   background-color: #f0f0f0;
   padding: 50px;
-  box-shadow: 0px 0px 5px 5px #DC2626;
+  box-shadow: 0px 0px 5px 5px #dc2626;
 }
 
-#decrypted-main-div{
+#decrypted-main-div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#decr-filter-search{
-  margin:10px;
+#decr-filter-search {
+  margin: 10px;
 }
-#decr-filter-search > input{
+#decr-filter-search > input {
   padding: 3px;
   border: none;
   outline: none;
@@ -124,18 +124,18 @@ p {
 #decr-filter-search > label {
   font-family: "Playpen Sans", cursive;
   font-size: 1.25rem;
-  color:#fff;
+  color: #fff;
 }
-#dec-img-cell > img{
+#dec-img-cell > img {
   height: 200px;
   width: 200px;
-  box-shadow: 0 0 3px 5px #57534E;
+  box-shadow: 0 0 3px 5px #57534e;
   margin: 10px;
 }
 #dec-img-cell > p {
   text-shadow: 1px 1px 2px white, 0 0 25px #262626, 0 0 5px #262626;
 }
-#dec-filter-search-btn{
+#dec-filter-search-btn {
   margin: 10px;
   cursor: pointer;
   padding: 4px 10px;
@@ -144,26 +144,26 @@ p {
   background-color: aquamarine;
   font-family: "Playpen Sans", cursive;
   font-size: 0.9rem;
-  border: 2px solid #14532D;
+  border: 2px solid #14532d;
 }
-#dec-filter-search-btn:hover{
-  color: #134E4A;
-  background-color: #99F6E4;
+#dec-filter-search-btn:hover {
+  color: #134e4a;
+  background-color: #99f6e4;
 }
-#date-text{
+#date-text {
   text-align: center;
 }
-#close-btn{
+#close-btn {
   margin: 20px 0;
   font-family: "Playpen Sans", cursive;
   padding: 12px 20px;
-  background-color: #DC2626;
+  background-color: #dc2626;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-#close-btn:hover{
+#close-btn:hover {
   background-color: red;
 }
